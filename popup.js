@@ -29,6 +29,6 @@ listBtn.addEventListener('click',async(e)=>{
     e.preventDefault();
     urlStorage = await chrome.storage.local.get(['urlStorage'])
     urlStorage = urlStorage.urlStorage
-    console.log(urlStorage)
+    chrome.runtime.openOptionsPage()
 
 })
