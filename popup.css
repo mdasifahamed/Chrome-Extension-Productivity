@@ -13,10 +13,21 @@ body {
   h1, p, button {  
     margin: 0; /* remove default margins */  
   } 
-
+.btn{
+  width: 120px;
+  height: 40px;
+  background-color: rgb(83, 155, 221);
+  text-decoration: black;
+  font-size: 15px;
+  border: 1;
+}
 .container{
     display: flex;
     flex-direction: column;
     column-gap: 100px;
     margin: 50px;
+}
+
+.btn:hover{
+  background-color: rgb(183, 214, 243);;
 }
