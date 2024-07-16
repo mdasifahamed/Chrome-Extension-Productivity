@@ -6,7 +6,8 @@
     "permissions":[
         "webNavigation",
         "tabs",
-        "storage"
+        "storage",
+        "activeTab"
     ],
     "icons":{
       "64":"assets/block.png"
@@ -14,13 +15,15 @@
     "action": {
       "default_popup": "popup.html"
     },
+    "options_page": "options.html",
     "background": {
       "service_worker": "background.js"
     },
     "content_scripts": [
       {
         "matches": ["<all_urls>"],
-        "js": ["contentScript.js"]
+        "js": ["contentScript.js"],
+        "page":["block.html"]
       }
     ]
    
