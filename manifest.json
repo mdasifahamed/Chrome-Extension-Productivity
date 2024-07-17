@@ -1,16 +1,15 @@
 {
     "manifest_version": 3,
-    "name": "Block",
+    "name": "Poductivity Booster",
     "version": "1.0.0",
-    "description": "Google Blokcer",
+    "description": "Boost Your Productivity By Controlling Your Web Movements ",
     "permissions":[
         "webNavigation",
         "tabs",
-        "storage",
-        "activeTab"
+        "storage"
     ],
     "icons":{
-      "64":"assets/block.png"
+      "64":"assets/arm.png"
     },
     "action": {
       "default_popup": "popup.html"
