@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Productivity Extension</title>
+  <link rel="stylesheet" type="text/css" href="options.css">
+  <script src="options.js"></script>
 </head>
 <body>
-    <button type="submit" id="btn">submit</button>
-    <script src="options.js"></script>
+  <div class="container">
+  <h1>Welcome to the Productivity Extension</h1>
+  <p>Enter a URL to block:</p>
+  <input type="text" id="urlInput">
+  <button id="saveUrlButton">Save URL</button>
+  <h2>Blocked URLs:</h2>
+  <div class = "table-container">
+  <table id="urlTable" border="1">
+    <thead>
+      <tr>
+        <th>URL</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  </div>
+  </div>
 </body>
 </html>
